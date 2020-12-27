@@ -14,7 +14,7 @@ $ mkdir [Your_project_name]
 
 - Create a README file via the terminal `$ touch README.md`
 
-## Virtual Environment Set Up
+### Virtual Environment Set Up
 
 Virtual environments and libraries are managed via poetry. Use poetry when see pip online.
 
@@ -22,7 +22,7 @@ Virtual environments and libraries are managed via poetry. Use poetry when see p
 - Run `$ poetry install` to create the virtual environment (.venv).
 - Activate the virtual environment `$ . .venv/bin/activate` (Use `$ deactivate` to disable the environment.)
 
-### Adding a Python Library With Poetry
+#### Adding a Python Library With Poetry
 
 ```
 $ poetry add [package_name]
@@ -30,7 +30,7 @@ $ poetry add [package_name]
 
 This will add the package_name to the pyproject.toml file.
 
-## Git Set Up
+### Git Set Up
 
 - Initialize the repository `$ git init`.
 - Add a git ignore file `$ touch .gitignore`.
@@ -50,15 +50,54 @@ $ git add . #. implies add all changes
 $ git commit -m "your message here"
 ```
 
-## Publish/Push the Repo to Github
+### Publish/Push the Repo to Github
 
 - Create the project on github.com
 - Add the origin remote to the local project.
 
 ```
 $ git remote add origin https://github.com/ANBurdett/project_template.git
-$ git branch -M main
-$ git push -u origin main
+$ git branch -M main #renames master branch, main branch.
 ```
 
-- Push the master branch to github.
+- Push the main branch to github.
+
+```
+$ git push -u origin main #pushes the main branch to the new remote.
+```
+
+## Committing During Project Work
+
+The above detail how to set up a project. The following sets out how to commit changes during the project.
+
+- Make changes and save locally.
+- Check if there are files to be committed.
+
+```
+$ git status
+```
+Anything in red, is waiting to be added/staged.
+
+- Add/stage the files.
+
+```
+$ git add .
+```
+
+- Check what is waiting to be committed.
+
+```
+$ git status
+```
+
+- Commit the files to git.
+
+```
+$ git commit -m "Add message (why?)"
+```
+
+- Push the changes to github.
+
+```
+$ git push origin main 
+```
