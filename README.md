@@ -41,3 +41,24 @@ e.g. gitignore file should contain:
 .venv
 *.dta
 ```
+
+- Create the first commit by adding our files and committing to git.
+
+```
+$ git status #checks file status
+$ git add . #. implies add all changes
+$ git commit -m "your message here"
+```
+
+## Publish/Push the Repo to Github
+
+- Create the project on github.com
+- Add the origin remote to the local project.
+
+```
+$ git remote add origin https://github.com/ANBurdett/project_template.git
+$ git branch -M main
+$ git push -u origin main
+```
+
+- Push the master branch to github.
