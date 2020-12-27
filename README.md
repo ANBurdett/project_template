@@ -111,6 +111,8 @@ $ git branch -M main #renames master branch, main branch.
 $ git push -u origin main #pushes the main branch to the new remote.
 ```
 
+---
+
 ## Committing During Project Work
 
 The above detail how to set up a project. The following sets out how to commit changes during the project.
